@@ -68,10 +68,10 @@ background-repeat: no-repeat;
     padding: 2rem;
   }
   .register__huddle-logo {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
   .register__main-image {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   .register__main-title {
     font-family: var(--ff-headings);
@@ -85,4 +85,28 @@ background-repeat: no-repeat;
     font-weight: var(--fw-mid);
     padding: 0;
     margin-bottom: 1.5rem;
+  }
+  .register__button {
+    color: var(--clr-primary-violet);
+    padding: .7rem;
+    border-radius: 2rem;
+    font-family: var(--ff-headings);
+    font-size: 0.93rem;
+    border: transparent;
+    width: 14rem;
+    box-shadow: 2px 4px 4px rgba(46, 8, 46, 0.788);
+    margin-bottom: 2.25rem;
+  }
+  .register__flexrow-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    place-content: center;
+  }
+  i {
+    width: 36px;
+    height: 36px;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 50%;
   }
