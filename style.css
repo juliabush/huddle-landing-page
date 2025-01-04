@@ -31,7 +31,7 @@
   
   /* 5. Improve media defaults */
   img, picture, video, canvas, svg {
-    display: block;
+    display: grid;
     max-width: 100%;
   }
   
@@ -59,6 +59,7 @@
   html, body {
     height: 100%;
     background-color: var(--clr-primary-violet);
+    display: grid;
   }
   main {
     background-image: url(images/bg-mobile.svg);
@@ -66,6 +67,7 @@ background-repeat: no-repeat;
     text-align: center;
     color: white;
     padding: 2rem;
+    place-content: center;
   }
   .register__huddle-logo {
     margin-bottom: 2.5rem;
@@ -109,4 +111,43 @@ background-repeat: no-repeat;
     border: 2px solid white;
     padding: 8px;
     border-radius: 50%;
+  }
+  @media (min-width:376px) {
+   main {
+    background-image: url(images/bg-desktop.svg);
+   }
+  }
+  @media (min-width:780px) {
+    main {
+    background-repeat: no-repeat;
+      text-align: start;
+      color: white;
+      padding: 2rem;
+      margin-left: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .landing-page__images {
+      grid-column: 1;
+    }
+    .register__huddle-logo {
+      place-self: start
+      ;
+    }
+    .landing-page__text {
+      grid-column: 2;
+      place-content: center;
+      max-width: 500px;
+      margin-left: 3rem;
+      margin-right: 2rem;
+    }
+    .register__flexrow-icons {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      place-content: end;
+      position: relative;
+      top: 140px;
+      right: 20px;
+    }
   }
