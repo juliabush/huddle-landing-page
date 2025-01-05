@@ -98,12 +98,14 @@ background-repeat: no-repeat;
     width: 14rem;
     box-shadow: 2px 4px 4px rgba(46, 8, 46, 0.788);
     margin-bottom: 2.25rem;
+    cursor: pointer;
   }
   .register__flexrow-icons {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     place-content: center;
+    cursor: pointer;
   }
   i {
     width: 36px;
@@ -112,6 +114,15 @@ background-repeat: no-repeat;
     padding: 8px;
     border-radius: 50%;
   }
+  i:hover {
+    color: var(--clr-primary-softmagenta);
+    border: 2px solid var(--clr-primary-softmagenta);
+  }
+  .register__button:hover {
+    color: white;
+    background-color: var(--clr-primary-softmagenta);
+  }
+  
   @media (min-width:376px) {
    main {
     background-image: url(images/bg-desktop.svg);
@@ -149,5 +160,26 @@ background-repeat: no-repeat;
       position: relative;
       top: 140px;
       right: 20px;
+    }
+    .register__flexrow-icons {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      align-content: center;
+    }
+    i {
+      width: 36px;
+      height: 36px;
+      border: 2px solid white;
+      padding: 10px;
+      border-radius: 50%;
+    }
+    i:hover {
+      color: var(--clr-primary-softmagenta);
+      border: 2px solid var(--clr-primary-softmagenta);
+    }
+    .register__button:hover {
+      color: white;
+      background-color: var(--clr-primary-softmagenta);
     }
   }
