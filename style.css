@@ -110,9 +110,10 @@ background-repeat: no-repeat;
   i {
     width: 36px;
     height: 36px;
-    border: 2px solid white;
     padding: 8px;
+    border: 2px solid white;
     border-radius: 50%;
+    text-align: center;
   }
   i:hover {
     color: var(--clr-primary-softmagenta);
@@ -122,7 +123,7 @@ background-repeat: no-repeat;
     color: white;
     background-color: var(--clr-primary-softmagenta);
   }
-  
+
   @media (min-width:376px) {
    main {
     background-image: url(images/bg-desktop.svg);
@@ -166,13 +167,6 @@ background-repeat: no-repeat;
       flex-direction: row;
       gap: 1rem;
       align-content: center;
-    }
-    i {
-      width: 36px;
-      height: 36px;
-      border: 2px solid white;
-      padding: 10px;
-      border-radius: 50%;
     }
     i:hover {
       color: var(--clr-primary-softmagenta);
